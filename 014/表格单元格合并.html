@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格单元格合并</title>
+</head>
+
+<body>
+    <h1>014</h1>
+    <hr color="bluegreen" size="8px">
+    <h3>表格单元格合并</h3>
+    <img src="./zp/1.png" width="400px">
+    <ul>
+        <li>水平合并:colspan</li>
+        <li>垂直合并:rowspan</li>
+    </ul>
+
+    <h3>例--------------------------------</h3>
+
+    <h4>合并6和7。</h4>
+    <p>方法:在6的<>里面添加colspan="2"(因为6和7是两个格子,所以写2),然后把7删掉就行</p>
+    <img src="./zp/2.png" width="300px">
+
+    <h4>合并15和20。</h4>
+    <p>方法:在15的<>里面添加rowspan="2"(因为15和20是两个格子,所以写2),然后把20删掉就行</p>
+    <img src="./zp/3.png" width="350px">
+
+    <h4>合并</h4>
+    <h4>11,12,13</h4>
+    <h4>16,17,18</h4>
+    <h4>21,22,23</h4>
+    <p>方法:在11的<>里面添加colspan="3" rowspan="3"(因为行是三个格子,列也是3个格子),<br>
+        然后把<br>
+        12,13,<br>
+        16,17,18,<br>
+        21,22,23删掉就行</p>
+
+        <img src="./zp/4.png" width="400px">
+
+        <h3>结果如下：</h3>
+    <table border="1" width="400px" height="100px">
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td colspan="2">单元格6</td>
+
+            <td>单元格8</td>
+            <td>单元格9</td>
+            <td>单元格10</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="3">单元格11</td>
+            <td>单元格14</td>
+            <td rowspan="2">单元格15</td>
+        </tr>
+        <tr>
+            <td>单元格19</td>
+        </tr>
+        <tr>
+            <td>单元格24</td>
+            <td>单元格25</td>
+
+
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
