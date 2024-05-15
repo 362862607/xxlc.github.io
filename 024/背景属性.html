@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性</title>
+    <style>
+        h3{
+            color: orangered;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-image: url("./zp/6.png");
+        }
+        .box3{
+            width: 1600px;
+            height: 400px;
+            background-image: url("./zp/6.png");
+            background-repeat: repeat-x;
+        }
+        .box4{
+            width: 400px;
+            height: 1600px;
+            background-image: url("./zp/6.png");
+            background-repeat: repeat-y;
+        }
+        .box5{
+            width: 400px;
+            height: 400px;
+            background-image: url("./zp/6.png");
+            background-repeat: repeat-y;
+            background-size: 100% 100%;
+        }
+        .box6{
+            width: 400px;
+            height: 400px;
+            background-image: url("./zp/6.png");
+            background-repeat: repeat-y;
+            background-size: cover;
+        }
+        .box7{
+            width: 400px;
+            height: 400px;
+            background-image: url("./zp/6.png");
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+        .box8{
+            width: 400px;
+            height: 400px;
+            background-image: url("./zp/6.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>024</h1>
+    <hr color="orangered" size="8px">
+    <h3>背景属性</h3>
+    <img src="./zp/1.png" width="600px">
+
+    <h3>--------------------------------</h3>
+
+    <img src="./zp/2.png" width="400px">
+
+    <h3>例-----------------------</h3>
+    <img src="./zp/3.png" width="400px"><br>
+    <img src="./zp/4.png" width="200px"><br>
+    <h3>结果--</h3>
+    
+    <div class="box1"></div>
+    
+    <h3>----------------------------</h3>
+    <img src="./zp/5.png" width="600px">
+    
+    <h3>例-----------------------</h3>
+    <p>因为创建的是400x400大小的区域,并且照片比1600大,<br>
+        照片默认是从左上开始显示的，所以只露出照片的左上部分</p>
+    <div class="box2"></div>
+    
+    <h3>----------------------------</h3>
+    
+    <img src="./zp/7.png" width="500px">
+    <h3>例-----------------------</h3>
+    <img src="./zp/8.png" alt="">
+    <img src="./zp/9.png" alt="">
+    <h3>repeat-x是<span style="color: greenyellow;">水平</span>平铺,因为背景的宽长1600px,照片不够宽的话,会重复填满为止。</h3>
+    
+    <div class="box3"></div>
+    
+    <h3>----------------------------</h3>
+    <img src="./zp/10.png" alt="">
+    <img src="./zp/11.png" alt="">
+    <h3>repeat-y是<span style="color: greenyellow;">垂直</span>平铺,因为背景的长1600px,照片不够长的话,会重复填满为止。</h3>
+    
+    <div class="box4"></div>
+    
+    
+    <h3>----------------------------</h3>
+    
+    <h3>no-repeat是<span style="color: greenyellow;">水平跟垂直都不重复</span>，如果背景比照片大，也只会显示一张照片不会填满。</h3>
+    
+    <h3>----------------------------</h3>
+    <img src="./zp/12.png" width="700px">
+
+    <h3>例-----------------------length,percentage,会把照片填满背景，但是比例会失调。</h3>
+    <img src="./zp/13.png" alt=""><br>
+    <img src="./zp/14.png" alt=""><br>
+    <div class="box5"></div>
+    <h3>例-----------------------cover,保持正常比例,但是多出背景的地方不会显示</h3>
+    
+    <img src="./zp/15.png" alt=""><br>
+    <img src="./zp/16.png" alt=""><br>
+
+    <div class="box6"></div>
+    
+    <h3>例-----------------------contain,保持正常比例,并将图案缩放成适合背景的最大大小</h3>
+    <img src="./zp/17.png" alt=""><br>
+    <img src="./zp/18.png" alt=""><br>
+
+    <div class="box7"></div>
+
+    <h3>----------------------------</h3>
+    <img src="./zp/19.png" width="700px">
+    <h3>例-----------------------</h3>背景最大为400x400,照片会从左中开始填满背景。
+    <p></p>
+    <img src="./zp/20.png" alt=""><br>
+    <img src="./zp/21.png" alt=""><br>
+
+    <div class="box8"></div>
+
+
+
+</body>
+</html>
