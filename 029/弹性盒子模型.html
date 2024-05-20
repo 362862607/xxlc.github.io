@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒子模型</title>
+    <style>
+
+        .hr1 {
+            color: #7bad35;
+            border: none;
+            border-top: 8px dashed #7bad35;
+        }
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #555555;
+            display: flex;/*把盒子变成弹性盒子（默认为左右排列）。*/
+            flex-direction: column;/*把弹性盒子的排列改成左边上下排列*/
+            justify-content: center;/*改变里面小盒子的垂直摆放位置，flex-start是上，center是中，flex-end是下*/
+            align-items: center;/*改变里面小盒子的水平摆放位置，属性一样*/
+
+
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            flex: 2;/*权重。意思是小盒子在大盒子内，填充的比例*/
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            flex: 2;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            flex: 1;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>029</h1>
+    <hr class="hr1">
+
+    <h3>弹性盒子</h3>
+    <img src="./zp/1.png" width="600px">
+    <img src="./zp/2.png" width="400px">
+    <img src="./zp/3.png" width="600px">
+    <img src="./zp/4.png" width="600px">
+    <img src="./zp/5.png" width="600px">
+    <img src="./zp/6.png" width="600px">
+    <hr class="hr1">
+    <h3>用法举例</h3>
+    <img src="./zp/7.png" width="600px">
+    <img src="./zp/8.png" width="300px">
+
+    <h3>结果---------------</h3>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
