@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        img {
+            width: 400px;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>033</h1>
+    <p>定位</p>
+    <hr>
+    <img src="./zp/01.png" alt="">
+    <img src="./zp/02.png" alt="">
+    <hr>
+    <h2>相对定位----position：relative；</h2>
+    <p>设置position：relative;后<br>
+        就可以设置<br>
+        left：200px；从左边向右移动200px<br>
+        top：100px；从上面向下移动100px<br>
+        等值了。
+    </p>
+    <h4>例如</h4>
+    <img style="width: 300px;" src="./zp/03.png" alt="">
+    <h4>结果</h4>
+    <img style="width: 300px;" src="./zp/04.png" alt="">
+    <hr>
+    <h2>绝对定位--会脱离文档流--position：absolute；</h2>
+    <p>也拥有上面相对定位的top，left等功能，但是会<strong>脱离文档流</strong>></p>
+    <p><strong>每个绝对定位，都是单独的一层</strong></p>
+    <img src="./zp/05.png" alt="">
+    <h4>例如</h4>
+    <img src="./zp/06.png" alt="">
+    <hr>
+    <h2>固定定位--会脱离文档流--position：fixed；</h2>
+    <p>也拥有top，left等调节位置的功能</p>
+    <strong>固定定位的话，不会随着页面的滚动而移动，会固定在页面上</strong>
+    <h2 style="color: red;">例如，屏幕右上角的淡蓝色小正方形</h2>
+    <img src="./zp/07.png" alt="">
+    <div class="box1">
+        <p style="font-size: 13px; text-align: center;">我是固定定位</p>
+    </div>
+    <hr>
+    <img style="width: 600px;" src="./zp/08.png" alt="">
+    <hr>
+    <img src="./zp/09.png" alt="">
+
+
+
+
+
+
+
+</body>
+
+</html>
